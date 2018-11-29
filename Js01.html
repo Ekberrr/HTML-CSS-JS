@@ -1,28 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <title> new document </title>
-    <meta http-equiv="Content-Type" content="text/html; charset=gbk"/>
-    <script type="text/javascript">
-        function openWindow() {
-            var open=confirm("È·ÈÏ´ò¿ªÁËÂğ£¿");// ĞÂ´°¿Ú´ò¿ªÊ±µ¯³öÈ·ÈÏ¿ò£¬ÊÇ·ñ´ò¿ª
-            if(open==true){
-                var url=prompt("È·ÈÏ´ò¿ªÂğ","http://www.imooc.com")// Í¨¹ıÊäÈë¶Ô»°¿ò£¬È·¶¨´ò¿ªµÄÍøÖ·£¬Ä¬ÈÏÎª http£º//www.imooc.com/
-                if(url!=null){
-                    window.open(url,"_blank",'height=500px','height=600px')
-                    //´ò¿ªµÄ´°¿ÚÒªÇó£¬¿í400ÏñËØ£¬¸ß500ÏñËØ£¬ÎŞ²Ëµ¥À¸¡¢ÎŞ¹¤¾ßÀ¸¡£
-                }else{
-                    alert("ÔÙ¼û")
-                }
-            }else{
-                alert("goodbye!")
-            }
-
-        }
-
-    </script>
+	<title>JSå…¥é—¨ç¯‡</title>
+	<!--confrim prompt-->
+	<meta charset="utf-8">
+	<script>
+      function openWindow() {
+		  var open = confirm("ä½ ç¡®å®šæ‰“å¼€äº†å—ï¼Ÿ")
+		  if (open==true){
+		      var url = prompt("ç¡®å®šå“ˆï¼","http://www.baidu.com")
+			  if (url!=null){
+				  window.open(url,"_blank",'height=500px','width=500px')
+			  }else{
+			      alert("å†è§ï¼")
+			  }
+		  }alert('Goodbye!')
+      }
+	</script>
 </head>
 <body>
-<input type="button" value="ĞÂ´°¿Ú´ò¿ªÍøÕ¾" onclick="openWindow()" />
+  <input type="button" value="æ‰“å¼€æ–°ç½‘é¡µ" onclick="openWindow()">
 </body>
 </html>
